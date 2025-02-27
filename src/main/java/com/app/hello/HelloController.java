@@ -25,4 +25,10 @@ public class HelloController {
         return "Hello " + name + " from BridgeLabz";
     }
 
+    //UC-4
+    @PostMapping("/hello4")
+    public String sayHello4(@RequestBody UserDTO user){
+        return "Hello " + user.getFirstName() + " " + user.getLastName() + " from Bridgelabz";
+    }
+
 }
